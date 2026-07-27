@@ -1,49 +1,105 @@
+:root {
+  --bg-dark: #07090e;
+  --bg-card: rgba(13, 20, 28, 0.7);
+  --primary: #00ffcc;
+  --accent: #0aff9d;
+  --text-main: #f0f4f8;
+  --text-muted: #94a3b8;
+  --border-glow: rgba(0, 255, 204, 0.2);
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f8fafb;
-  color: #222;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .doc-header {
   text-align: center;
-  background: linear-gradient(135deg, #009688, #004d40);
+  background: radial-gradient(circle at 50% 0%, #002b28 0%, #07090e 80%);
   color: white;
-  padding: 3rem 1rem;
+  padding: 5rem 1.5rem 3.5rem;
   position: relative;
+  border-bottom: 1px solid var(--border-glow);
+}
+
+.doc-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 40%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5rem 0;
+}
+
+.doc-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .back-btn {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: white;
-  color: #004d40;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: bold;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(0, 255, 204, 0.1);
+  color: var(--primary);
+  border: 1px solid var(--border-glow);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 .back-btn:hover {
-  background: #e0f2f1;
+  background: var(--primary);
+  color: #040d12;
+  box-shadow: 0 0 15px var(--border-glow);
 }
 
 .doc-section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 850px;
+  margin: 2.5rem auto;
+  padding: 2.2rem;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--border-glow);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.doc-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.doc-section p, .doc-section li {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.doc-section ul, .doc-section ol {
+  padding-left: 1.5rem;
+}
+
+.doc-section li {
+  margin-bottom: 0.6rem;
+}
+
+.doc-section strong {
+  color: #fff;
 }
 
 .highlight {
-  border-left: 5px solid #009688;
+  border-left: 5px solid var(--primary);
+  background: rgba(0, 255, 204, 0.05);
 }
 
 .contact {
@@ -51,16 +107,19 @@ body {
 }
 
 .contact-btn {
-  background: #009688;
-  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #040d12;
   text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  font-weight: 800;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
   display: inline-block;
   margin-top: 1rem;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
 }
 
 .contact-btn:hover {
-  background: #00796b;
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px var(--primary);
 }

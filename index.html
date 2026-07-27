@@ -4,182 +4,236 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feel.AI — We Feel. We Understand.</title>
-    <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Feel.AI is an AI model designed to naturally understand and speak Nigerian Pidgin, capturing tone, emotion, and street context.">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-<nav class="navbar">
-  <div class="logo">
-    <img src="logo.png" alt="Feel.AI Logo">
-  </div>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#home">
+        <img src="logo.png" alt="Feel.AI Logo">
+      </a>
+    </div>
 
-  <div class="menu-toggle">&#9776;</div>
+    <div class="menu-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></div>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#" class="donate-btn">Donate</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#future">Vision</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#donateModal" class="donate-btn"><i class="fa-solid fa-heart"></i> Donate</a></li>
+    </ul>
+  </nav>
 
-
-
-  <section class="hero" id="home" style="margin-top: 80px;">
-
-    <!-- for the particle animations -->
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <canvas id="particles"></canvas>
-
-    <h1 class="glow-text">Feel.AI — We Feel. We Understand.</h1>
-    <h2><span id="changing-text"></span></h2>
-    <a href="https://feelai-demo.onrender.com" target="_blank" class="cta-btn">Test the Model</a>
+    
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-bolt"></i> Next-Gen African AI</div>
+      <h1 class="glow-text">Feel.AI — We Feel. We Understand.</h1>
+      <h2><span id="changing-text"></span></h2>
+      <div class="hero-actions">
+        <a href="https://feelai-demo.onrender.com" target="_blank" class="cta-btn"><i class="fa-solid fa-play"></i> Test the Model</a>
+        <a href="documentation.html" class="cta-btn secondary"><i class="fa-solid fa-book"></i> Read Docs</a>
+      </div>
+    </div>
   </section>
 
-
-  <!-- This is the about us section -->
-  <section id="about" class="about">
-  <h2>About Feel.AI</h2>
-  <p>
-    Feel.AI was born from one simple truth — <strong>language no suppose be barrier</strong>.  
-    Across Nigeria, millions dey express themselves in Pidgin, but technology still dey speak grammar wey no reach street level.  
-    That’s where we step in.
-  </p>
-
-  <p>
-    We’re building an AI that <strong>understands and speaks Nigerian Pidgin naturally</strong> — not just translating words, 
-    but catching tone, emotion, and street context. 
-    Whether you be student, trader, or tech bro, Feel.AI go relate with you the way you talk. 
-  </p>
-
-  <p>
-    Our mission na to bridge understanding across people and platforms — 
-    making communication smoother, faster, and more inclusive for the next generation of digital Africans.
-  </p>
-
-  <div class="about-highlight">
-    <h3>“We feel. We understand. We relate.”</h3>
-  </div>
-</section>
-
-<!-- This is the bigger-picture section -->
-<section id="future" class="future">
-  <h2>The Future Vision — The Bigger Picture</h2>
-  <p>
-    Feel.AI no just be chatbot — na revolution. We dey build an AI wey <strong>talk, feel, and respond like human</strong>.  
-    From Lagos to Kano, Port Harcourt to Jos — this na movement to make technology truly <strong>understand the people</strong>.
-   <a href="documentation.html" target="_blank" class="cta-docs-btn">Read the Documentation →</a> to see how the tech works and where we dey go next. 
-  </p>
-
-  <p>
-    Our dream? To make every Nigerian fit <strong>talk to AI like person wey dey hear them well well</strong>.  
-    Imagine say you fit pick your phone, talk to Feel.AI like normal call —  
-    and e dey <strong>hear your voice, understand your mood, respond instantly</strong> in real Pidgin.  
-    That na the future we dey build.
-  </p>
-
-  <div class="future-video">
-    <div class="future-video">
-  <video controls autoplay muted loop class="future-vid">
-    <source src="feelai-demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-  </div>
-
-  <div class="vision-points">
-    <div class="vision-card">
-      <h3>🌍 Local Voices, Global Reach</h3>
-      <p>We start from Naija, but our dream big.  
-         Soon, Feel.AI go support more African dialects and connect voices across the continent.</p>
-    </div>
-
-    <div class="vision-card">
-      <h3>🎙️ Real-Time Voice Interaction</h3>
-      <p>Feel.AI no go just read your words — e go <strong>hear you, understand your tone</strong>,  
-         and <strong>talk back instantly</strong> like una dey gist for call.</p>
-    </div>
-
-    <div class="vision-card">
-      <h3>🤖 Emotion + Intonation</h3>
-      <p>We dey train Feel.AI to sense <strong>vibe, tone, and emotion</strong> —  
-         so when you vex, e calm you down; when you happy, e match your energy.</p>
-    </div>
-
-    <div class="vision-card">
-      <h3>💬 Real Conversations</h3>
-      <p>We no want AI wey dey lecture you — we want one wey dey <strong>connect with you</strong>.  
-         Feel.AI go learn through every chat, every laugh, and every call.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- This is the funding section -->
- <section id="funding" class="funding-section">
-  <div class="container">
-    <h2>Funding Progress</h2>
+  <!-- About Us Section -->
+  <section id="about" class="about reveal">
+    <div class="section-badge">Who We Are</div>
+    <h2>About Feel.AI</h2>
     <p>
-      Every naira counts — and we’re committed to full transparency. Watch our funding grow as the dream 
-      becomes reality.
+      Feel.AI was born from one simple truth — <strong>language no suppose be barrier</strong>.  
+      Across Nigeria, millions dey express themselves in Pidgin, but technology still dey speak grammar wey no reach street level.  
+      That’s where we step in.
     </p>
-    <div class="progress-container">
-      <div class="progress-bar" style="width: 45%">₦0.00 / ₦450,000,000</div>
+
+    <p>
+      We’re building an AI that <strong>understands and speaks Nigerian Pidgin naturally</strong> — not just translating words, 
+      but catching tone, emotion, and street context. 
+      Whether you be student, trader, or tech bro, Feel.AI go relate with you the way you talk. 
+    </p>
+
+    <p>
+      Our mission na to bridge understanding across people and platforms — 
+      making communication smoother, faster, and more inclusive for the next generation of digital Africans.
+    </p>
+
+    <div class="about-highlight">
+      <i class="fa-solid fa-quote-left quote-icon"></i>
+      <h3>“We feel. We understand. We relate.”</h3>
+    </div>
+  </section>
+
+  <!-- Future Vision Section -->
+  <section id="future" class="future reveal">
+    <div class="section-badge">The Bigger Picture</div>
+    <h2>The Future Vision</h2>
+    <p>
+      Feel.AI no just be chatbot — na revolution. We dey build an AI wey <strong>talk, feel, and respond like human</strong>.  
+      From Lagos to Kano, Port Harcourt to Jos — this na movement to make technology truly <strong>understand the people</strong>.
+    </p>
+
+    <div class="future-video-container">
+      <div class="video-frame">
+        <video controls autoplay muted loop class="future-vid">
+          <source src="feelai-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="vision-points">
+      <div class="vision-card">
+        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Local Voices, Global Reach</h3>
+        <p>We start from Naija, but our dream big.  
+           Soon, Feel.AI go support more African dialects and connect voices across the continent.</p>
+      </div>
+
+      <div class="vision-card">
+        <div class="card-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <h3>Real-Time Voice Interaction</h3>
+        <p>Feel.AI no go just read your words — e go <strong>hear you, understand your tone</strong>,  
+           and <strong>talk back instantly</strong> like una dey gist for call.</p>
+      </div>
+
+      <div class="vision-card">
+        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>Emotion + Intonation</h3>
+        <p>We dey train Feel.AI to sense <strong>vibe, tone, and emotion</strong> —  
+           so when you vex, e calm you down; when you happy, e match your energy.</p>
+      </div>
+
+      <div class="vision-card">
+        <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
+        <h3>Real Conversations</h3>
+        <p>We no want AI wey dey lecture you — we want one wey dey <strong>connect with you</strong>.  
+           Feel.AI go learn through every chat, every laugh, and every call.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding Section -->
+  <section id="funding" class="funding-section reveal">
+    <div class="container">
+      <div class="section-badge">Transparency</div>
+      <h2>Funding Progress</h2>
+      <p>
+        Every naira counts — and we’re committed to full transparency. Watch our funding grow as the dream 
+        becomes reality.
+      </p>
+      <div class="progress-box">
+        <div class="progress-info">
+          <span class="raised">₦0.00 Raised</span>
+          <span class="target">Goal: ₦450,000,000</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 5%;">
+            <div class="progress-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section reveal">
+    <div class="container">
+      <div class="section-badge">Community Vibe</div>
+      <h2>What People Are Saying</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"This AI dey speak my language better pass some humans 😂. Feel.AI na correct innovation!"</p>
+          <div class="user-info">
+            <div class="avatar">T</div>
+            <span>- Tunde, Lagos</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"For the first time, an AI wey understand how we dey talk for street. Respect to the team!"</p>
+          <div class="user-info">
+            <div class="avatar">A</div>
+            <span>- Ada, Enugu</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"If you wan see the future of African AI, look Feel.AI side. We move!"</p>
+          <div class="user-info">
+            <div class="avatar">U</div>
+            <span>- Usman, Abuja</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section reveal">
+    <div class="section-badge">Get in Touch</div>
+    <h2>Contact Us</h2>
+    <p>Have a question, idea, or want to support Feel.AI? We'd love to hear from you 💚</p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you! Message sent successfully.');">
+      <div class="form-group">
+        <i class="fa-regular fa-user input-icon"></i>
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <i class="fa-regular fa-envelope input-icon"></i>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <i class="fa-regular fa-comment input-icon"></i>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      </div>
+      <button type="submit" class="contact-btn"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fa-regular fa-envelope"></i> Email: <a href="mailto:team@feelai.ng">team@feelai.ng</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/phylip-genty-a64530296/" target="_blank">@FeelAI_NG</a></p>
+    </div>
+  </section>
+
+  <!-- Donation Modal -->
+  <div id="donateModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="close-modal" id="closeDonate">&times;</button>
+      <div class="modal-icon"><i class="fa-solid fa-heart"></i></div>
+      <h3>Support Feel.AI Development</h3>
+      <p>Your contribution helps build the first truly voice-native Nigerian Pidgin AI model.</p>
+      <div class="donation-options">
+        <button class="donate-opt">₦1,000</button>
+        <button class="donate-opt">₦5,000</button>
+        <button class="donate-opt">₦20,000</button>
+        <button class="donate-opt custom">Custom</button>
+      </div>
+      <a href="mailto:team@feelai.ng?subject=Donation%20Inquiry%20for%20Feel.AI" class="modal-action-btn">Proceed to Support</a>
     </div>
   </div>
-</section>
-
-  <!-- This is the testimonials section -->
-<section id="testimonials" class="testimonials-section">
-  <div class="container">
-    <h2>What People Are Saying</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>"This AI dey speak my language better pass some humans 😂. Feel.AI na correct innovation!"</p>
-        <span>- Tunde, Lagos</span>
-      </div>
-      <div class="testimonial">
-        <p>"For the first time, an AI wey understand how we dey talk for street. Respect to the team!"</p>
-        <span>- Ada, Enugu</span>
-      </div>
-      <div class="testimonial">
-        <p>"If you wan see the future of African AI, look Feel.AI side. We move!"</p>
-        <span>- Usman, Abuja</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- This is the contact us section -->
-  <section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <p>Have a question, idea, or want to support Feel.AI? We'd love to hear from you 💚</p>
-
-  <form class="contact-form" action="#" method="post">
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Your Name" required>
-    </div>
-    <div class="form-group">
-      <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-    </div>
-    <button type="submit" class="contact-btn">Send Message</button>
-  </form>
-
-  <div class="contact-info">
-    <p>Email: <a href="mailto:phylipgenty@gmail.com">team@feelai.ng</a></p>
-    <p>LinkedIN: <a href="https://www.linkedin.com/in/phylip-genty-a64530296/" target="_blank">@FeelAI_NG</a></p>
-  </div>
-</section>
-
 
   <footer>
-    <p>© 2025 Feel.AI. All Rights Reserved.</p>
-    <p>Powered by the <a href="https://genty-studios.vercel.app/" class="contact-info">GentyStudios</a></p>
+    <div class="footer-content">
+      <p>© 2025 Feel.AI. All Rights Reserved.</p>
+      <p>Powered by <a href="https://genty-studios.vercel.app/" target="_blank" class="genty-link">GentyStudios</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
